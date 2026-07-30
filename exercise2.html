@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercise 2 - HTML5 Form and Media Elements</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#dcdcdc;
+}
+
+.container{
+    width:1100px;
+    margin:20px auto;
+    background:#ffffff;
+    border:2px solid #444;
+    box-shadow:0 0 10px gray;
+}
+
+header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px;
+    background:#ffffff;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+}
+
+.profile img{
+    width:130px;
+    height:130px;
+    border-radius:5px;
+    border:3px solid #333;
+}
+
+.name{
+    flex:1;
+    text-align:center;
+}
+
+.name h1{
+    font-size:34px;
+    color:#003366;
+}
+
+nav{
+    background:#ececec;
+    border-top:2px solid #555;
+    border-bottom:2px solid #555;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 20px;
+}
+
+.links a{
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+    margin-right:40px;
+}
+
+.links a:hover{
+    color:blue;
+}
+
+.search input{
+    padding:6px;
+    width:220px;
+}
+
+.top{
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+}
+
+.skills{
+    width:32%;
+}
+
+.skills h2{
+    margin-bottom:20px;
+    color:#003366;
+}
+
+.skill{
+    margin-bottom:18px;
+}
+
+progress{
+    width:100%;
+    height:22px;
+}
+
+.video{
+    width:63%;
+}
+
+.video h2{
+    color:#003366;
+    margin-bottom:15px;
+}
+
+video{
+    width:100%;
+    border:2px solid black;
+}
+
+.forms{
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+}
+
+fieldset{
+    width:48%;
+    padding:15px;
+    border:2px solid #444;
+}
+
+legend{
+    font-weight:bold;
+    color:#003366;
+    font-size:18px;
+}
+
+label{
+    display:block;
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=number],
+input[type=url],
+input[type=tel],
+input[type=date],
+select,
+textarea{
+
+    width:100%;
+    padding:8px;
+    border:1px solid #999;
+    border-radius:3px;
+
+}
+
+textarea{
+    resize:none;
+}
+
+.gender{
+    margin-top:10px;
+}
+
+.buttons{
+    margin-top:15px;
+}
+
+input[type=submit]{
+
+    padding:10px 20px;
+    background:#0066cc;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+
+}
+
+input[type=reset]{
+
+    padding:10px 20px;
+    background:red;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+
+}
+
+.bottom{
+
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+
+}
+
+.pdf{
+
+    width:48%;
+
+}
+
+.map{
+
+    width:48%;
+
+}
+
+embed{
+
+    width:100%;
+    height:350px;
+    border:2px solid black;
+
+}
+
+iframe{
+
+    width:100%;
+    height:350px;
+    border:2px solid black;
+
+}
+
+.audio{
+
+    padding:20px;
+    text-align:center;
+
+}
+
+footer{
+
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<div class="profile">
+
+<img src="image.png" alt="Profile">
+
+</div>
+
+<div class="name">
+
+<h1>Ms. Monika M </h1>
+
+</div>
+
+</header>
+
+<nav>
+
+<div class="links">
+
+<a href="#">Academics</a>
+
+<a href="#">Achievements</a>
+
+<a href="#">Friends</a>
+
+</div>
+
+<div class="search">
+
+<input type="search" placeholder="Search">
+
+</div>
+
+</nav>
+
+<div class="top">
+
+<div class="skills">
+
+<h2>Skills</h2>
+
+<div class="skill">
+
+<p>Photoshop</p>
+
+<progress value="85" max="100"></progress>
+
+</div>
+
+<div class="skill">
+
+<p>Java</p>
+
+<progress value="95" max="100"></progress>
+
+</div>
+
+<div class="skill">
+
+<p>C++</p>
+
+<progress value="80" max="100"></progress>
+
+</div>
+
+<div class="skill">
+
+<p>PHP</p>
+
+<progress value="75" max="100"></progress>
+
+</div>
+
+<div class="skill">
+
+<p>JavaScript</p>
+
+<progress value="90" max="100"></progress>
+
+</div>
+
+</div>
+
+<div class="video">
+
+<h2>Introduction Video</h2>
+
+<video controls>
+
+<source src="8396-208571065_medium.mp4" type="video/mp4">
+
+Your browser does not support video.
+
+</video>
+
+</div>
+
+</div>
+<div class="forms">
+
+<!-- PERSONAL INFORMATION -->
+
+<fieldset>
+
+<legend>Personal Information</legend>
+
+<label>Full Name</label>
+<input type="text" placeholder="Enter your name">
+
+<label>Password</label>
+<input type="password" placeholder="Enter password">
+
+<label>Register Number</label>
+<input type="text" placeholder="URK24CS1028">
+
+<label>Age</label>
+<input type="number">
+
+<label>Gender</label>
+
+<div class="gender">
+
+<input type="radio" name="gender"> Male
+
+<input type="radio" name="gender"> Female
+
+<input type="radio" name="gender"> Other
+
+</div>
+
+<label>Date of Birth</label>
+<input type="date">
+
+<label>Favourite Color</label>
+<input type="color">
+
+<label>Upload Photo</label>
+<input type="file">
+
+</fieldset>
+
+<!-- CONTACT INFORMATION -->
+
+<fieldset>
+
+<legend>Contact Information</legend>
+
+<label>Address</label>
+
+<textarea rows="4"></textarea>
+
+<label>State</label>
+
+<select>
+
+<option>Select State</option>
+
+<option>Tamil Nadu</option>
+
+<option>Kerala</option>
+
+<option>Karnataka</option>
+
+<option>Andhra Pradesh</option>
+
+<option>Telangana</option>
+
+</select>
+
+<label>Zip Code</label>
+
+<input type="number">
+
+<label>Mobile Number</label>
+
+<input type="tel" placeholder="9876543210">
+
+<label>Email</label>
+
+<input type="email" placeholder="example@gmail.com">
+
+<label>Website</label>
+
+<input type="url" placeholder="https://">
+
+<br>
+
+<input type="checkbox">
+
+Verified
+
+<div class="buttons">
+
+<input type="submit" value="Submit">
+
+<input type="reset" value="Reset">
+
+</div>
+
+</fieldset>
+
+</div>
+
+<!-- PDF + MAP -->
+
+<div class="bottom">
+
+<div class="pdf">
+
+<h2>Embedded PDF</h2>
+
+<embed src="MONIKA M RESUME.pdf" type="application/pdf">
+
+</div>
+
+<div class="map">
+
+<h2>Location</h2>
+
+<iframe
+src="https://maps.google.com/maps?q=Karunya%20Institute%20of%20Technology%20and%20Sciences&t=&z=15&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</div>
+
+</div>
+
+<!-- AUDIO -->
+
+<div class="audio">
+
+<h2>Audio</h2>
+
+<audio controls>
+
+<source src="paulyudin-the-tech-153477 (1).mp3" type="audio/mpeg">
+
+Your browser does not support audio.
+
+</audio>
+
+</div>
+
+<footer>
+
+<h3>Your Address</h3>
+
+<p>Karunya Institute of Technology and Sciences</p>
+
+<p>Coimbatore - 641114</p>
+
+<br>
+
+<p>© 2026 | URK24CS1028 | Web Technology Laboratory</p>
+
+</footer>
+
+</div>
+
+</body>
+
+</html>c:\Users\Varun\Downloads\8396-208571065_medium.mp4
