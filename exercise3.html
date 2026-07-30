@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Portfolio</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#ececec;
+}
+
+.container{
+    width:1200px;
+    margin:20px auto;
+    background:white;
+    box-shadow:0 0 10px gray;
+}
+
+/* HEADER */
+
+header{
+    background:#6a1b9a;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+}
+
+.profile img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    border:4px solid white;
+    margin-right:20px;
+}
+
+.profile h1{
+    font-size:35px;
+}
+
+.profile h3{
+    margin-top:5px;
+    font-weight:normal;
+}
+
+.social img{
+    width:40px;
+    margin-left:15px;
+}
+
+/* NAVIGATION */
+
+nav{
+    background:#2f2f2f;
+    display:flex;
+    justify-content:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 25px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* ABOUT */
+
+.about{
+    display:flex;
+    justify-content:space-between;
+    padding:35px;
+}
+
+.about-text{
+    width:65%;
+}
+
+.about-text h2{
+    color:#6a1b9a;
+    margin-bottom:15px;
+}
+
+.about-text p{
+    text-align:justify;
+    line-height:28px;
+}
+
+.about-img{
+    width:30%;
+    text-align:center;
+}
+
+.about-img img{
+    width:280px;
+    border-radius:10px;
+}
+
+/* TECHNOLOGY */
+
+.tech{
+    padding:30px;
+}
+
+.tech h2{
+    text-align:center;
+    color:#6a1b9a;
+    margin-bottom:25px;
+}
+
+.cards{
+    display:flex;
+    justify-content:space-between;
+}
+
+.card{
+    width:23%;
+    background:#fafafa;
+    border-radius:10px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 0 10px silver;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    transition:0.3s;
+}
+
+.card img{
+    width:90px;
+    height:90px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#6a1b9a;
+    margin-bottom:10px;
+}
+
+.card p{
+    text-align:justify;
+    line-height:24px;
+}
+
+/* THREE BOX SECTION */
+
+.info{
+    display:flex;
+    justify-content:space-between;
+    padding:30px;
+}
+
+.box{
+    width:31%;
+    background:#fafafa;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px silver;
+}
+
+.box h2{
+    color:#6a1b9a;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.box ul{
+    padding-left:20px;
+}
+
+.box li{
+    margin-bottom:10px;
+}
+
+/* CONTACT */
+
+.contact{
+    padding:30px;
+}
+
+.contact h2{
+    text-align:center;
+    color:#6a1b9a;
+    margin-bottom:20px;
+}
+
+.contact table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.contact td{
+    padding:12px;
+    border:1px solid #ddd;
+}
+
+/* FOOTER */
+
+footer{
+    background:#6a1b9a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+footer p{
+    margin:5px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.container{
+    width:100%;
+}
+
+.about,
+.cards,
+.info{
+    flex-direction:column;
+    align-items:center;
+}
+
+.about-text,
+.about-img,
+.card,
+.box{
+    width:90%;
+    margin-bottom:20px;
+}
+
+nav{
+    flex-direction:column;
+}
+
+nav a{
+    margin:10px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<div class="profile">
+
+<img src="image.png">
+
+<div>
+
+<h1>Monika M</h1>
+
+<h3>Computer Science Student</h3>
+
+</div>
+
+</div>
+
+<div class="social">
+
+<img src="fb.png">
+
+<img src="twitter.png">
+
+<img src="gtihub.png">
+
+</div>
+
+</header>
+
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#">About</a>
+
+<a href="#">Skills</a>
+
+<a href="#">Projects</a>
+
+<a href="#">Contact</a>
+
+</nav>
+
+<section class="about">
+
+<div class="about-text">
+
+<h2>About Me</h2>
+
+<p>
+
+Hello! I am <b>Monika M</b>, currently pursuing B.Tech Computer Science and Engineering at Karunya Institute of Technology and Sciences. I enjoy developing responsive websites using HTML5 and CSS3 and continuously learning new technologies. I am passionate about Java programming, web development, IoT projects, and problem solving.
+
+</p>
+
+</div>
+
+<div class="about-img">
+
+<img src="image.png">
+
+</div>
+
+</section>
+
+<section class="tech">
+
+<h2>Technologies I Use</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="html.png">
+
+<h3>HTML5</h3>
+
+<p>HTML5 provides the structure of modern web pages using semantic tags and multimedia support.</p>
+
+</div>
+
+<div class="card">
+
+<img src="css.png">
+
+<h3>CSS3</h3>
+
+<p>CSS3 is used to style web pages with colors, layouts, animations and responsive designs.</p>
+
+</div>
+
+<div class="card">
+
+<img src="js.png">
+
+<h3>JavaScript</h3>
+
+<p>JavaScript makes websites interactive by handling events, validation and dynamic content.</p>
+
+</div>
+
+<div class="card">
+
+<img src="php.png">
+
+<h3>PHP</h3>
+
+<p>PHP is a server-side scripting language used for dynamic websites and database connectivity.</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- INFORMATION SECTION -->
+
+<section class="info">
+
+<div class="box">
+
+<h2>Skills</h2>
+
+<ul>
+
+<li>HTML5</li>
+
+<li>CSS3</li>
+
+<li>JavaScript</li>
+
+<li>PHP</li>
+
+<li>Java</li>
+
+<li>Python</li>
+
+<li>SQL</li>
+
+<li>Git & GitHub</li>
+
+</ul>
+
+</div>
+
+<div class="box">
+
+<h2>Projects</h2>
+
+<ul>
+
+<li>Smart Pepper Spray Alert System</li>
+
+<li>Emotion Aware IoT for Postpartum Care</li>
+
+<li>Smart Dustbin - Klean</li>
+
+<li>Personal Portfolio Website</li>
+
+<li>Student Management System</li>
+
+<li>Web Technology Laboratory Exercises</li>
+
+</ul>
+
+</div>
+
+<div class="box">
+
+<h2>Education</h2>
+
+<ul>
+
+<li><b>B.Tech CSE</b><br>
+Karunya Institute of Technology and Sciences</li>
+<br>
+
+<li>Higher Secondary Education</li>
+<br>
+
+<li>Secondary School Education</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact">
+
+<h2>Contact Information</h2>
+
+<table>
+
+<tr>
+
+<td><b>Name</b></td>
+
+<td>Monika M</td>
+
+</tr>
+
+<tr>
+
+<td><b>Register Number</b></td>
+
+<td>URK24CS1028</td>
+
+</tr>
+
+<tr>
+
+<td><b>Email</b></td>
+
+<td>monikam@karunya.edu.in</td>
+
+</tr>
+
+<tr>
+
+<td><b>Phone</b></td>
+
+<td>+91 9876543210</td>
+
+</tr>
+
+<tr>
+
+<td><b>College</b></td>
+
+<td>Karunya Institute of Technology and Sciences</td>
+
+</tr>
+
+<tr>
+
+<td><b>GitHub</b></td>
+
+<td>https://github.com/Monikamurugank</td>
+
+</tr>
+
+<tr>
+
+<td><b>LinkedIn</b></td>
+
+<td>https://www.linkedin.com/in/monika-m-008169325/</td>
+
+</tr>
+
+<tr>
+
+<td><b>Address</b></td>
+
+<td>Coimbatore, Tamil Nadu, India</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<footer>
+
+<h2>Thank You for Visiting!</h2>
+
+<br>
+
+<p>
+Designed using HTML5 and CSS3
+</p>
+
+<br>
+
+<p>
+© 2026 Monika M | URK24CS1028
+</p>
+
+<p>
+Karunya Institute of Technology and Sciences
+</p>
+
+</footer>
+
+</div>
+
+</body>
+
+</html>
