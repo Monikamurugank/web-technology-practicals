@@ -1,0 +1,578 @@
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+/* =================================================
+   BODY
+================================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f7f4ed;
+
+    color: #263238;
+
+    line-height: 1.6;
+}
+
+
+/* =================================================
+   HEADER
+================================================= */
+
+header {
+
+    height: 230px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+
+    /* Online image */
+
+    background-image:
+        linear-gradient(
+            rgba(20, 45, 35, 0.65),
+            rgba(20, 45, 35, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1600&q=80");
+
+
+    background-size: cover;
+
+    background-position: center;
+
+    position: relative;
+}
+
+
+/* Header title */
+
+.header-content {
+    color: white;
+
+    padding: 20px;
+}
+
+
+.header-content h1 {
+
+    font-size: 42px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+
+.header-content p {
+
+    font-size: 17px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =================================================
+   NAVIGATION
+================================================= */
+
+nav {
+
+    height: 55px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #183c32;
+}
+
+
+nav a {
+
+    height: 55px;
+
+    min-width: 130px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+
+    background-color: #d4a373;
+
+    color: #183c32;
+}
+
+
+/* =================================================
+   PRODUCTS SECTION
+================================================= */
+
+.products-section {
+
+    padding: 45px 30px;
+
+    text-align: center;
+
+    background-color: #f7f4ed;
+}
+
+
+.products-section h2 {
+
+    font-size: 28px;
+
+    color: #183c32;
+
+    margin-bottom: 5px;
+}
+
+
+.section-text {
+
+    color: #777;
+
+    margin-bottom: 30px;
+}
+
+
+/* Product container */
+
+.product-container {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+
+/* =================================================
+   PRODUCT CARD
+================================================= */
+
+.product-card {
+
+    width: 280px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s;
+}
+
+
+.product-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+
+/* Product image */
+
+.product-card img {
+
+    width: 100%;
+
+    height: 160px;
+
+    object-fit: cover;
+
+    opacity: 0.9;
+}
+
+
+/* Image becomes fully visible */
+
+.product-card:hover img {
+
+    opacity: 1;
+}
+
+
+/* Product information */
+
+.product-info {
+
+    padding: 18px;
+}
+
+
+.product-info h3 {
+
+    color: #183c32;
+
+    margin-bottom: 5px;
+}
+
+
+.product-info p {
+
+    font-size: 14px;
+
+    color: #777;
+
+    margin-bottom: 15px;
+}
+
+
+/* Product button */
+
+.product-info button {
+
+    border: none;
+
+    padding: 9px 18px;
+
+    background-color: #3a7563;
+
+    color: white;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+.product-info button:hover {
+
+    background-color: #183c32;
+}
+
+
+/* =================================================
+   MAIN FORM SECTION
+================================================= */
+
+main {
+
+    min-height: 390px;
+
+    padding: 45px 30px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 45px;
+
+
+    background-image:
+        linear-gradient(
+            rgba(24, 60, 50, 0.78),
+            rgba(24, 60, 50, 0.78)
+        ),
+        url("https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1600&q=80");
+
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+/* =================================================
+   FORM BOX
+================================================= */
+
+.form-box {
+
+    width: 310px;
+
+    min-height: 310px;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+.form-box h2 {
+
+    text-align: center;
+
+    color: #183c32;
+
+    margin-bottom: 4px;
+}
+
+
+.form-description {
+
+    text-align: center;
+
+    color: #888;
+
+    font-size: 13px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =================================================
+   FORM
+================================================= */
+
+form {
+
+    width: 100%;
+}
+
+
+form label {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #333;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+form input {
+
+    width: 100%;
+
+    height: 40px;
+
+    padding: 8px 12px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+
+/* =================================================
+   FOCUS PSEUDO CLASS
+================================================= */
+
+form input:focus {
+
+    border: 2px solid #3a7563;
+
+    background-color: #f0f8f5;
+}
+
+
+/* =================================================
+   VALID / INVALID
+================================================= */
+
+input[type="email"]:valid {
+
+    border-color: #4caf50;
+}
+
+
+input[type="email"]:invalid {
+
+    border-color: #e57373;
+}
+
+
+/* =================================================
+   FORM BUTTON
+================================================= */
+
+form button {
+
+    width: 100%;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #3a7563;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+form button:hover {
+
+    background-color: #183c32;
+}
+
+
+/* =================================================
+   FOOTER
+================================================= */
+
+footer {
+
+    height: 65px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    background-color: #102c25;
+
+    color: #ddd;
+
+    font-size: 13px;
+}
+
+
+/* =================================================
+   BORDER IMAGE
+================================================= */
+
+.border-example {
+
+    border: 10px solid transparent;
+
+    border-image:
+        url("border.png")
+        30
+        round;
+}
+
+
+/* =================================================
+   BACKGROUND SIZE EXAMPLE
+================================================= */
+
+.background-size-example {
+
+    background-image:
+        url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=300&q=80");
+
+    background-size: 100px 80px;
+
+    background-repeat: no-repeat;
+}
+
+
+/* =================================================
+   RESPONSIVE DESIGN
+================================================= */
+
+@media (max-width: 800px) {
+
+    .product-container {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    main {
+
+        flex-direction: column;
+
+        gap: 25px;
+    }
+
+
+    nav a {
+
+        min-width: auto;
+
+        flex: 1;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    header {
+
+        height: 200px;
+    }
+
+
+    .header-content h1 {
+
+        font-size: 30px;
+    }
+
+
+    .product-card {
+
+        width: 90%;
+    }
+
+
+    .form-box {
+
+        width: 90%;
+    }
+
+}
