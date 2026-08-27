@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Birthday Cake Order</title>
+
+    <script>
+
+        function calculateOrder() {
+
+            var small = parseInt(
+                document.getElementById("small").value
+            );
+
+            var medium = parseInt(
+                document.getElementById("medium").value
+            );
+
+            var large = parseInt(
+                document.getElementById("large").value
+            );
+
+            var tip = parseInt(
+                document.querySelector(
+                    'input[name="tip"]:checked'
+                ).value
+            );
+
+            // Cake cost
+            var cost =
+                (small * 100) +
+                (medium * 200) +
+                (large * 400);
+
+            // 9% tax
+            var tax = cost * 0.09;
+
+            var totalAfterTax = cost + tax;
+
+            // Tip
+            var tipAmount =
+                totalAfterTax * (tip / 100);
+
+            // Final cost
+            var finalCost =
+                totalAfterTax + tipAmount;
+
+            document.getElementById("price").innerHTML =
+                finalCost.toFixed(2);
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <h1>Birthday Cake Order Form</h1>
+
+    <fieldset>
+
+        Number of 1/2kg Cakes:
+        <input type="text" id="small">
+        <br><br>
+
+        Number of 1kg Cakes:
+        <input type="text" id="medium">
+        <br><br>
+
+        Number of 2kg Cakes:
+        <input type="text" id="large">
+        <br><br>
+
+        Tip:
+
+        <label>
+            <input type="radio"
+                   value="10"
+                   name="tip"
+                   checked>
+            10%
+        </label>
+
+        <label>
+            <input type="radio"
+                   value="15"
+                   name="tip">
+            15%
+        </label>
+
+        <label>
+            <input type="radio"
+                   value="20"
+                   name="tip">
+            20%
+        </label>
+
+        <br><br>
+
+        <button onclick="calculateOrder()">
+            Calculate Order
+        </button>
+
+    </fieldset>
+
+    <p>
+        Cost of order:
+        ₹<span id="price"></span>
+    </p>
+
+</body>
+</html>
