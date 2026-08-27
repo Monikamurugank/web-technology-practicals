@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Font Size</title>
+
+    <script>
+
+        function incSize() {
+
+            document.getElementById("para1").style.fontSize =
+                "28px";
+        }
+
+        function decSize() {
+
+            document.getElementById("para1").style.fontSize =
+                "16px";
+        }
+
+    </script>
+</head>
+<body>
+
+    <h1>Change Font size!</h1>
+
+    <p id="para1"
+       onmouseover="incSize()"
+       onmouseout="decSize()">
+
+        Move your cursor over me to zoom in...
+
+    </p>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details</title>
+
+    <script>
+
+        function displayStudents() {
+
+            var student = [
+                {
+                    name: "John",
+                    r_num: "UR13CS129",
+                    dob: 1995
+                },
+
+                {
+                    name: "Joseph",
+                    r_num: "456",
+                    dob: 1998
+                },
+
+                {
+                    name: "David",
+                    r_num: "789",
+                    dob: 2002
+                }
+            ];
+
+            var output = "";
+
+            for (var i = 0; i < student.length; i++) {
+
+                output +=
+                    student[i].name +
+                    "'s Register Number is " +
+                    student[i].r_num +
+                    "<br>";
+
+                if (student[i].dob < 2000) {
+
+                    output +=
+                        "Category: Before 2000<br>";
+                }
+                else {
+
+                    output +=
+                        "Category: After 2000<br>";
+                }
+
+                output += "<br>";
+            }
+
+            document.getElementById("result").innerHTML =
+                output;
+        }
+
+    </script>
+</head>
+
+<body onload="displayStudents()">
+
+    <h1>Student Details</h1>
+
+    <div id="result"></div>
+
+</body>
+</html>
